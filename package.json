@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node --env-file=.env indexTest.js"
   },
   "dependencies": {
     "lodash": "^4.17.21"

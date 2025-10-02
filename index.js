@@ -1,11 +1,17 @@
-import { MiClase } from "./MiClase.js";
+// import { MiClase } from "./MiClase.js";
 
-const miClase = new MiClase();
+// const miClase = new MiClase();
 
-miClase.confirmar();
+// miClase.confirmar();
 
 
+import { createHmac } from 'node:crypto';
 
+const secret = 'abcdefg';
+const hash = createHmac('sha256', secret)
+               .update('I love cupcakes')
+               .digest('hex');
+console.log(hash);
 
 //------------------------------------------------------------------------------------------------------------------------------------
 
